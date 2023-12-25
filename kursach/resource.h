@@ -1,6 +1,6 @@
 //{{NO_DEPENDENCIES}}
-// Microsoft Visual C++ generated include file.
-// Used by kursach.rc
+// Включаемый файл, созданный в Microsoft Visual C++.
+// Используется kursach.rc
 //
 #define IDD_ABOUTBOX                    100
 #define IDP_OLE_INIT_FAILED             100
@@ -17,6 +17,12 @@
 #define IDB_BITMAP7                     321
 #define IDB_BITMAP8                     322
 #define IDB_BITMAP9                     323
+#define IDB_BITMAP10                    324
+#define IDB_BITMAP11                    325
+#define IDB_BITMAP12                    326
+#define IDB_BITMAP13                    327
+#define IDB_BITMAP14                    328
+#define IDB_BITMAP15                    329
 #define IDC_EDIT1                       1000
 #define IDC_COMBO1                      1001
 #define IDC_EDIT13                      1003
@@ -48,7 +54,7 @@
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        324
+#define _APS_NEXT_RESOURCE_VALUE        330
 #define _APS_NEXT_COMMAND_VALUE         32771
 #define _APS_NEXT_CONTROL_VALUE         1004
 #define _APS_NEXT_SYMED_VALUE           314

@@ -8,11 +8,11 @@
 #include <cmath>
 
 #include "math.h"
-#include "C:\Program Files\ASCON\KOMPAS-3D v21 Study\SDK\Include\ksConstants.h"
-#include "C:\Program Files\ASCON\KOMPAS-3D v21 Study\SDK\Include\ksConstants3D.h"
+#include "D:\компас\SDK\Include\ksConstants.h"
+#include "D:\компас\SDK\Include\ksConstants3D.h"
 
 #define PI 4*atan(1)
-#import "C:\Program Files\ASCON\KOMPAS-3D v21 Study\SDK\lib\kAPI5.tlb"
+#import "D:\компас\SDK\lib\kAPI5.tlb"
 
 
 using namespace Kompas6API5;
@@ -595,7 +595,7 @@ void CNewDialog2::OnBnClickedOk()
 	pFillet->Create();
 
 
-	pDoc2->SaveAs("C:\\7777777777\\6666666\\star.m3d");
+	pDoc2->SaveAs("D:\\kursachTEST\\star.m3d");
 
 	pDoc2 = pKompasApp55->Document3D();
 	pDoc2->Create(false, true);
@@ -1256,7 +1256,7 @@ void CNewDialog2::OnBnClickedOk()
 
 
 
-	pDoc2->SaveAs("C:\\7777777777\\6666666\\mufta2.m3d");
+	pDoc2->SaveAs("D:\\kursachTEST\\mufta2.m3d");
 
 	// сборка
 	pDoc2 = pKompasApp55->Document3D();
@@ -1266,9 +1266,9 @@ void CNewDialog2::OnBnClickedOk()
 	pPart2 = pDoc2->GetPart(pTop_Part);
 
 	ksPartPtr pBoss, pGear1, pGear2;
-	pDoc2->SetPartFromFile("C:\\7777777777\\6666666\\star.m3d", pPart2, true);
-	pDoc2->SetPartFromFile("C:\\7777777777\\6666666\\mufta2.m3d", pPart2, true);
-	pDoc2->SetPartFromFile("C:\\7777777777\\6666666\\mufta2.m3d", pPart2, true);
+	pDoc2->SetPartFromFile("D:\\kursachTEST\\star.m3d", pPart2, true);
+	pDoc2->SetPartFromFile("D:\\kursachTEST\\mufta2.m3d", pPart2, true);
+	pDoc2->SetPartFromFile("D:\\kursachTEST\\mufta2.m3d", pPart2, true);
 	
 	pBoss = pDoc2->GetPart(0);
 	pGear1 = pDoc2->GetPart(1);
@@ -1304,5 +1304,5 @@ void CNewDialog2::OnBnClickedOk()
 
 	pDoc2->RebuildDocument();
 
-	pDoc2->SaveAs("C:\\7777777777\\6666666\\Assembly.a3d");
+	pDoc2->SaveAs("D:\\kursachTEST\\Assembly.a3d");
 }
