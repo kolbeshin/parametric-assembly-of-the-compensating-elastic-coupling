@@ -228,24 +228,24 @@ void CkursachView::DisplayImage()
     dc.FillSolidRect(&clientRect, dc.GetBkColor());
 
     // Загрузка первой картинки
-    if (image1.Load(_T("C:/Users/senyashago/source/repos/kursach/1isp.jpg")) != S_OK)
+    if (image1.Load(_T("C:\\Users\\kolbe\\source\\repos\\parametric-assembly-of-the-compensating-elastic-coupling\\1isp.jpg")) != S_OK)
     {
         OutputDebugString(_T("Не удалось загрузить первую картинку\n"));
         return;
     }
 
     // Загрузка второй картинки
-    if (image2.Load(_T("C:/Users/senyashago/source/repos/kursach/1isp_2.jpg")) != S_OK)
+    if (image2.Load(_T("C:\\Users\\kolbe\\source\\repos\\parametric-assembly-of-the-compensating-elastic-coupling\\1isp_2.jpg")) != S_OK)
     {
         OutputDebugString(_T("Не удалось загрузить вторую картинку\n"));
         return;
     }
 
     // Увеличиваем исходные размеры картинок в 1.5 раза
-    int newWidth1 = static_cast<int>(image1.GetWidth() * 3);
-    int newHeight1 = static_cast<int>(image1.GetHeight() * 3);
-    int newWidth2 = static_cast<int>(image2.GetWidth() * 3);
-    int newHeight2 = static_cast<int>(image2.GetHeight() * 3);
+    int newWidth1 = static_cast<int>(image1.GetWidth() );
+    int newHeight1 = static_cast<int>(image1.GetHeight() );
+    int newWidth2 = static_cast<int>(image2.GetWidth() );
+    int newHeight2 = static_cast<int>(image2.GetHeight() );
 
     // Определяем размер для первой картинки
     int x1 = 0;
@@ -283,24 +283,24 @@ void CkursachView::DisplayImage2()
     dc.FillSolidRect(&clientRect, dc.GetBkColor());
 
     // Загрузка первой картинки
-    if (image1.Load(_T("C:/Users/senyashago/source/repos/kursach/2isp.jpg")) != S_OK)
+    if (image1.Load(_T("C:\\Users\\kolbe\\source\\repos\\parametric-assembly-of-the-compensating-elastic-coupling\\2isp.jpg")) != S_OK)
     {
         OutputDebugString(_T("Не удалось загрузить первую картинку\n"));
         return;
     }
 
     // Загрузка второй картинки
-    if (image2.Load(_T("C:/Users/senyashago/source/repos/kursach/2isp_2.jpg")) != S_OK)
+    if (image2.Load(_T("C:\\Users\\kolbe\\source\\repos\\parametric-assembly-of-the-compensating-elastic-coupling\\2isp_2.jpg")) != S_OK)
     {
         OutputDebugString(_T("Не удалось загрузить вторую картинку\n"));
         return;
     }
 
     // Увеличиваем исходные размеры картинок в 1.5 раза
-    int newWidth1 = static_cast<int>(image1.GetWidth() * 1.5);
-    int newHeight1 = static_cast<int>(image1.GetHeight() * 1.5);
-    int newWidth2 = static_cast<int>(image2.GetWidth() * 1.5);
-    int newHeight2 = static_cast<int>(image2.GetHeight() * 1.5);
+    int newWidth1 = static_cast<int>(image1.GetWidth() );
+    int newHeight1 = static_cast<int>(image1.GetHeight() );
+    int newWidth2 = static_cast<int>(image2.GetWidth() );
+    int newHeight2 = static_cast<int>(image2.GetHeight() );
 
     // Определяем размер для первой картинки
     int x1 = 0;

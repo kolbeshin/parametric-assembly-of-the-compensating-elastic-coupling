@@ -314,7 +314,7 @@ void CNewDialog::OnBnClickedOk()
 	pFillet->Create();
 
 	//сохраняем звезду
-	pDoc->SaveAs("D:\\kursachTEST\\zvezda1.m3d");
+	pDoc->SaveAs("D:\\kursachTEST\\star1.m3d");
 
 
 	//создаем новый документ c муфтой 1 исполнения (2 зуба)
@@ -575,13 +575,13 @@ void CNewDialog::OnBnClickedOk()
 	pDoc->SaveAs("D:\\kursachTEST\\mufta.m3d");
 
 
-	// сборка
+	// создание нового документы сборки
 	pDoc = pKompasApp5->Document3D();
 	pDoc->Create(false, false);
 	pPart = pDoc->GetPart(pTop_Part);
 	ksPartPtr pBoss, pGear1, pGear2;
 	//добавляем в сборку ранее созданные детали
-	pDoc->SetPartFromFile("D:\\kursachTEST\\zvezda1.m3d", pPart, true);
+	pDoc->SetPartFromFile("D:\\kursachTEST\\star1.m3d", pPart, true);
 	pDoc->SetPartFromFile("D:\\kursachTEST\\mufta.m3d", pPart, true);
 	pDoc->SetPartFromFile("D:\\kursachTEST\\mufta.m3d", pPart, true);
 
