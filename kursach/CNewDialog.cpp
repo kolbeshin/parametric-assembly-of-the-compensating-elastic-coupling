@@ -76,6 +76,23 @@ BEGIN_MESSAGE_MAP(CNewDialog, CDialog)
 	ON_BN_CLICKED(IDOK, &CNewDialog::OnBnClickedOk)
 END_MESSAGE_MAP()
 
+BOOL CNewDialog::OnInitDialog()
+{
+	CDialog::OnInitDialog();
+
+	// Добавление элементов в ComboBox
+	CComboBox* pComboBox = (CComboBox*)GetDlgItem(IDC_COMBO1);
+	pComboBox->AddString(_T("2,5"));
+	pComboBox->AddString(_T("6,3"));
+
+	// Выбор элемента по умолчанию
+	pComboBox->SetCurSel(0);
+
+	// Другой код инициализации, если необходимо
+
+	return TRUE;
+}
+
 
 // CNewDialog message handlers
 void CNewDialog::OnCbnSelchangeCombo1()

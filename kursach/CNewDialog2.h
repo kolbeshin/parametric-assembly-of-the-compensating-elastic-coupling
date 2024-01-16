@@ -37,7 +37,9 @@ public:
 	double b1;
 	double R;
 	CComboBox execution2;
-	afx_msg void OnCbnSelchangeCombo2();
+	afx_msg
+		BOOL OnInitDialog();
+	void OnCbnSelchangeCombo2();
 	double lDeep;
 	double B1;
 	afx_msg void OnBnClickedOk();

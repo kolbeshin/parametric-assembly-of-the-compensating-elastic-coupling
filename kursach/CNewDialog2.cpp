@@ -82,6 +82,26 @@ BEGIN_MESSAGE_MAP(CNewDialog2, CDialog)
 	ON_BN_CLICKED(IDOK, &CNewDialog2::OnBnClickedOk)
 END_MESSAGE_MAP()
 
+BOOL CNewDialog2::OnInitDialog()
+{
+	CDialog::OnInitDialog();
+
+	// Добавление элементов в ComboBox
+	CComboBox* pComboBox = (CComboBox*)GetDlgItem(IDC_COMBO1);
+	pComboBox->AddString(_T("16,0"));
+	pComboBox->AddString(_T("31,5"));
+	pComboBox->AddString(_T("63,0"));
+	pComboBox->AddString(_T("125,0"));
+	pComboBox->AddString(_T("250,0"));
+	pComboBox->AddString(_T("400,0"));
+
+	// Выбор элемента по умолчанию
+	pComboBox->SetCurSel(0);
+
+	// Другой код инициализации, если необходимо
+
+	return TRUE;
+}
 
 // CNewDialog2 message handlers
 
@@ -205,7 +225,6 @@ void CNewDialog2::OnCbnSelchangeCombo2()
 		d_star = 56;
 		H = 30;
 	}
-
 
 	// Обновляем данные на диалоговом окне
 	UpdateData(FALSE);
